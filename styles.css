@@ -1,1 +1,139 @@
 /* your code here */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#18d978;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.product{
+    width:850px;
+    background:#f5f5f5;
+    border-radius:10px;
+    display:flex;
+    padding:30px;
+    box-shadow:0px 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Left Side */
+
+.product__photo{
+    width:45%;
+}
+
+.photo-container{
+    position:relative;
+}
+
+.photo-main{
+    background:#a4e31b;
+    border-radius:8px;
+    padding:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+.controls{
+    display:flex;
+    justify-content:space-between;
+    color:white;
+    margin-bottom:10px;
+}
+
+.photo-main img{
+    width:100%;
+    display:block;
+}
+
+.photo-album{
+    background:white;
+    padding:15px;
+}
+
+.photo-album ul{
+    list-style:none;
+    display:flex;
+    justify-content:space-around;
+}
+
+.photo-album li{
+    border:1px solid #ddd;
+    padding:5px;
+}
+
+.photo-album img{
+    width:45px;
+    height:45px;
+}
+
+/* Right Side */
+
+.product__info{
+    width:55%;
+    padding:20px 35px;
+}
+
+.title h1{
+    color:#555;
+    margin-bottom:5px;
+}
+
+.title span{
+    color:#aaa;
+    font-size:12px;
+}
+
+.price{
+    margin:30px 0;
+    color:#ff4d4d;
+    font-size:25px;
+}
+
+.price span{
+    font-size:60px;
+}
+
+.variant h3,
+.description h3{
+    color:gray;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.variant ul{
+    list-style:none;
+    display:flex;
+    gap:10px;
+    margin-bottom:30px;
+}
+
+.variant img{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    border:1px solid #ccc;
+}
+
+.description ul{
+    padding-left:20px;
+    line-height:1.8;
+}
+
+button{
+    margin-top:30px;
+    background:#ff4d4d;
+    border:none;
+    color:white;
+    padding:15px 30px;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 5px 15px rgba(255,0,0,.3);
+}
